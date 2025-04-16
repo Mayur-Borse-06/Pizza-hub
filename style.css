@@ -1,0 +1,491 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    /* -----------------navBar--------------------- */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    z-index: 1000;
+    font-family: "Fira Sans Condensed", sans-serif;
+    /* font-weight: 500; */
+    font-style: italic;
+}
+
+.logo img {
+    padding: 0 16px 0;
+    width: 100px;
+}
+
+.navbar {
+    list-style: none;
+    gap: 25px;
+    display: flex;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3 ease;
+}
+
+.navbar a:hover {
+    color: #167747;
+}
+
+.icon {
+
+    gap: 5px;
+}
+
+.icon .fa {
+    color: #39c981;
+    padding: 5px;
+    width: 25px;
+    transition: color 0.3 ease;
+}
+
+.icon .fa:hover {
+    color: #167747;
+}
+
+/* --------------------------Body----------------------- */
+
+.first {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin: auto;
+}
+
+.left {
+    width: 100%;
+
+}
+
+.left h6 {
+    font-size: 20px;
+    text-align: start;
+    color: brown;
+    padding: 55px 50px 20px;
+
+}
+
+.left h1 {
+    font-size: 150px;
+    color: #167747;
+    padding: 0 50px 0;
+}
+
+.left p {
+    font-size: 20px;
+    padding: 0 50px 0;
+}
+
+.right {
+    width: 100%;
+}
+
+.right img {
+    width: 100%;
+}
+
+/* ----------------------button-container----------------------- */
+.button-container {
+    padding: 36px 50px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 15px 23px 11px;
+    border: none;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    clip-path: polygon(0% 0, 100% 0, 85% 100%, 0 100%);
+}
+
+.add-to-cart:hover {
+    background-color: #167747;
+}
+
+.book-a-table {
+    background-color: #333;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.book-a-table:hover {
+    background-color: #161616;
+}
+
+/*--------------------------- PRICE ------------------------*/
+.second {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.secondleft {
+    padding: 35px 50px 0;
+    gap: 100px;
+    display: flex;
+}
+
+.smalltext01 h1 {
+    padding: 5px;
+    font-size: 33px;
+    color: black;
+}
+
+.smalltext01 h2 {
+    padding: 5px;
+    font-size: 16px;
+    color: #535252;
+}
+
+.smalltext02 h1 {
+    padding: 5px;
+    font-size: 33px;
+    color: black;
+}
+
+.smalltext02 h2 {
+    padding: 5px;
+    font-size: 16px;
+    color: #535252;
+}
+
+.secondright {
+    display: flex;
+}
+
+.secondright .btn {
+    padding-top: 55px;
+}
+
+.secondrightbtn {
+    font-family: 'Fira Sans Condensed';
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    border-radius: 16px;
+    padding: 5px;
+    margin: 0 2rem 0;
+    color: #000;
+    background-color: #e4c332;
+    cursor: pointer;
+}
+
+.secondrightbtn:hover {
+    background-color: #c0a010;
+}
+
+/* -----------------------Our Best Deals----------------- */
+.bestdeal {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.hradline {
+    font-size: 45px;
+    color: #0b6338;
+    padding: 50px;
+    text-align: center;
+}
+
+.dileitem {
+    margin: auto;
+    width: 100%;
+    gap: 50px;
+    display: flex;
+}
+
+.itmleft {
+    margin: 2rem;
+}
+
+.itmright {
+    margin: 2rem;
+}
+
+.d_text h1 {
+    padding: 0px 0px 19px;
+    font-family: unset;
+    font-size: 40px;
+}
+
+.d_text p {
+    padding-right: 15rem;
+    font-family: unset;
+    font-size: 20px;
+}
+
+.button-buy {
+    padding: 35px 0px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 15px 23px 11px;
+    border: none;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    clip-path: polygon(0% 0, 100% 0, 85% 100%, 0 100%);
+}
+
+.add-to-cart:hover {
+    background-color: #167747;
+}
+
+.d_img {
+    width: 100%;
+    padding: 5px;
+}
+
+.checked {
+    color: orange;
+}
+
+.odp {
+    margin: auto;
+    width: 90%;
+}
+
+.odp h2 {
+    color: orange;
+    font-size: 13px;
+    text-align: center;
+}
+
+.odp h1 {
+    font-size: 45px;
+    color: #0b6338;
+    padding: 20px;
+    text-align: center;
+}
+
+.odpsubpart {
+    gap: 5px;
+    width: 100%;
+    display: flex;
+}
+
+.odpitem img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.ret {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.odpitem h1 {
+    padding: 5px 1px 3px;
+    color: black;
+    font-size: 20px;
+}
+
+.odpitem p {
+    text-align: center;
+    padding: 5px 62px 9px;
+    color: black;
+    font-size: 15px;
+}
+
+.odpbtn {
+    text-align: center;
+    border-radius: 2px;
+}
+
+.odpbtn .btn {
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #167747;
+    text-align: center;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.odpbtn .btn:hover {
+    background-color: #0b6338
+}
+.secondright img{
+    width: 100%;
+}
+
+@media(max-width:700px) {
+    .left h6 {
+        font-size: 20px;
+        text-align: start;
+        color: brown;
+        padding: 22px 9px;
+    }
+
+    .left h1 {
+        font-size: 86px;
+        color: #167747;
+        padding: 0 0px 0;
+    }
+
+    .left p {
+        font-size: 20px;
+        padding: 0 0px 0;
+    }
+
+    .header {
+        position: fixed;
+        background: #6eebbd;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    .odpsubpart {
+        gap: 5px;
+        width: 100%;
+        display: flow;
+    }
+
+
+    .first {
+        width: 90%;
+        display: flow;
+        justify-content: space-between;
+        gap: 25px;
+        margin: auto;
+    }
+    .secondright {
+        display: flow;
+    }
+    .secondleft {
+        text-align: center;
+        justify-content: center;
+        padding: 35px 50px 0;
+        gap: 100px;
+        display: flow;
+    }
+    .second {
+        width: 90%;
+        display: flow;
+        justify-content: space-between;
+        gap: 25px;
+        margin: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .secondright .btn {
+        text-align: center;
+        padding-top: 55px;
+        padding-bottom: 25px;
+    }
+    .dileitem {
+        margin: auto;
+        width: 100%;
+        gap: 50px;
+        display: flow;
+    }
+    .d_text p {
+        padding-right: 1rem;
+        font-family: unset;
+        font-size: 20px;
+    }
+    .odpitem img {
+        width: 100%;
+    }
+    .ret {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .odpitem h1 {
+        padding: 5px 1px 3px;
+        color: black;
+        font-size: 40px;
+    }
+    .odpitem p {
+        text-align: center;
+        padding: 5px 19px 9px;
+        color: black;
+        font-size: 21px;
+    }
+    .odp h2 {
+        background: #0b6338;
+        color: orange;
+        font-size: 30px;
+        text-align: center;
+    }
+    .odpbtn .btn {
+        margin: 10px;
+        padding: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #0b6338;
+        text-align: center;
+        border-radius: 18px;
+        border: none;
+        cursor: pointer;
+    }
+    .button-container {
+        padding: 41px 14px 0;
+        display: flex;
+        /* gap: 10px; */
+    }
+    .button {
+        padding: 15px 23px 11px;
+        border: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+}
+
