@@ -24,7 +24,7 @@ async function main() {
 }
 main();
 
-let port = 8080;
+let port = 3000;
 
 app.get('/pizza',(req,res)=>{
     res.render('pizza.ejs');
