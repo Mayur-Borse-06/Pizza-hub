@@ -4,7 +4,14 @@ const mongoose = require('mongoose');
 const ejsMate = require('ejs-mate');
 const methodOverride = require("method-override");
 const path = require('path');
+const session = require('express-session');
+
 const Pizza = require('./models/pizza.js');
+
+const userRoutes = require("./routes/user");
+
+const port = 3000;
+
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
@@ -25,7 +32,22 @@ async function main() {
 }
 main();
 
-let port = 8080;
+//Express session
+
+const sessionOptions = {
+  secret: "secretcode",
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    maxAge: 7 * 24 * 60 * 60 * 1000,
+    httpOnly: true,
+    secure: false,
+  }
+}
+
+app.use(session(sessionOptions));
+
+app.use("/", userRoutes);
 
 app.get('/pizza',(req,res)=>{
     res.render('pizza.ejs');
