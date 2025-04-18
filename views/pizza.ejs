@@ -36,8 +36,10 @@
                     <i class="fa fa-user dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
               
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/signup">Signup</a></li>
-                  <li><a class="dropdown-item" href="/login">Login</a></li>
+                    <% if (!currentUser) { %>
+                        <li><a class="dropdown-item" href="/signup">Signup</a></li>
+                        <li><a class="dropdown-item" href="/login">Login</a></li>
+                    <% } %>
                   <li><a class="dropdown-item" href="/logout">Logout</a></li>
                 </ul>
               </div>

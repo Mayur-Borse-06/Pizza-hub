@@ -48,7 +48,13 @@
     <div class="col-6 offset-3 mt-3">
         <form action="/signup" method="post" class="needs-validation" novalidate>
             <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" placeholder="Enter username" name="fullName" id="fullName" class="form-control" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Full Name required!</div>
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username: (eg: yourname412)</label>
                 <input type="text" placeholder="Enter username" name="username" id="username" class="form-control" required>
                 <div class="valid-feedback">Looks good!</div>
                 <div class="invalid-feedback">Username required!</div>
