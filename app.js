@@ -65,9 +65,10 @@ app.use((req, res, next) => {
 
 app.use("/", userRoutes);
 
-app.get('/pizza',(req,res)=>{
-    res.render('pizza.ejs');
-})
+app.get('/pizza', async (req, res) => {
+    const pizzas = await Pizza.find({});
+    res.render('pizza.ejs', { pizzas }); // <-- pass as 'pizzas'
+});
 app.get("/pizza/new",(req,res)=>{
   res.render("new.ejs");
 })
@@ -84,12 +85,7 @@ app.post("/pizza",async(req,res)=>{
   await pizza.save();
   res.redirect("/pizza");
 })
-
-//show route
-app.get("/pizza/:id",async(req,res)=>{
-  const pizza = await Pizza.findById(req.params.id);
-  res.render("show.ejs",{pizza});
-})
+app
 app.listen(port,()=>{
     console.log(`Server is running on http://localhost:${port}`);
 })

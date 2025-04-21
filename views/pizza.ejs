@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -118,51 +117,25 @@
     <section class="odp">
         <h2>MENU</h2>
         <h1>Our deliverable Product</h1>
-        <div class="odpsubpart">
-        <div class="odpitem">
-            <img src="pizzapic.jpg" alt="">
-            <div class="ret">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </div>
-            <h1>Cheese izza</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, minus?</p>
-            <div class="odpbtn"><button button class="btn">Add To Cart  $6.96</button></div>
-        </div>
-       
-            <div class="odpitem">
-                <img src="pizzapic.jpg" alt="">
-                <div class="ret">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
+        <div class="odp-list">
+            <% for(let pizza of pizzas) { %>
+                <div class="odpitem">
+                    <img src="<%= pizza.image %>" alt="<%= pizza.name %>">
+                    <div class="ret">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <h1><%= pizza.name %></h1>
+                    <p><%= pizza.description %></p>
+                    <div class="odpbtn">
+                        <button class="btn">Add To Cart  $<%= pizza.price.toFixed(2) %></button>
+                    </div>
                 </div>
-                <h1>Cheese izza</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, minus?</p>
-                <div class="odpbtn"><button button class="btn">Add To Cart  $6.96</button></div>
-            </div>
-            <div class="odpitem">
-                <img src="pizzapic.jpg" alt="">
-                <div class="ret">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </div>
-                <h1>Cheese izza</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, minus?</p>
-                <div class="odpbtn"><button class="btn">Add To Cart  $6.96</button></div>
-            </div>
+            <% } %>
         </div>
-
-        section.
-        
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
